@@ -1,12 +1,9 @@
-'use strict';
+"use strict";
 
-import React from 'react';
+import Hello from './components/hello';
 import ReactDOM from 'react-dom';
-
-class Hello extends React.Component {
-    render() {
-        return <h1>Hello</h1>;
-    }
-}
+import React from 'react';
+import { connect } from 'react-redux'
+import store from './store/index.js';
 
 ReactDOM.render(<Hello/>, document.getElementById('app'));
