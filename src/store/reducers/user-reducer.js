@@ -1,5 +1,5 @@
 const initialState = {
-    users: [],
+    users: ['Dev'],
     userProfile: {
         repos: []
     }
