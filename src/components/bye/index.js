@@ -4,11 +4,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { connect } from 'react-redux'
 import store from '../../store';
-import { Link } from 'react-router';
 
-class Hello extends React.Component {
+class Bye extends React.Component {
     render() {
-        return <Link to="/bye">Hello, { this.props.users}!</Link>;
+        return <h1>Bye, { this.props.users}!</h1>;
     }
 }
 
@@ -18,4 +17,4 @@ const mapStateToProps = function(store) {
     };
 }
 
-export default connect(mapStateToProps)(Hello)
+export default connect(mapStateToProps)(Bye)
