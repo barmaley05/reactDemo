@@ -8,7 +8,7 @@ import { Link } from 'react-router';
 
 class Hello extends React.Component {
     render() {
-        return <Link to="/bye">Hello, { this.props.users}!</Link>;
+        return <h1>Hello, { this.props.users}!</h1>;
     }
 }
 

@@ -1,0 +1,42 @@
+<div className="container-fluid">
+                <div className="row" style="background-color: chartreuse">
+                    <h1>Привет, мир!</h1>
+                </div>
+            <div className={style.row} style="background-color:chartreuse">
+                    <div className={style.col-lg-2 + ' ' + style.col-md-2 + ' ' + style.col-sm-2 + ' ' + menuU} >
+                        <ui class="nav nav-pills nav-stacked">
+                            <li role="presentation" className={style.active}>
+                                <Link to="/hello">Hello</Link>
+                            </li>
+                            <li role="presentation">
+                                <Link to="/bye">Bye</Link>
+                            </li>
+                        </ui>
+                    </div>
+                    <div className={style.col-lg-10 + ' ' + style.col-md-10 + ' ' + style.col-sm-10} >
+                        {this.props.children}
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            return <Col fluid>
+                                <Row>
+                                    <h1>Привет, мир!</h1>
+                                </Row>
+                                <Row>
+                                    <Col sm={2} md={2} lg={2}>
+                                        <Nav bsStyle="pills" stacked activeKey={1} >
+                                            <NavItem eventKey={1} href="/hello">Hello</NavItem>
+                                            <NavItem eventKey={2} href="/bye">Bye</NavItem>
+                                        </Nav>
+                                    </Col>
+                                    <Col sm={6} md={6}>
+                                        <h1>hi</h1>
+                                    </Col>
+                                </Row>
+
+
+                            </Col>

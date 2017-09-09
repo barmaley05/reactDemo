@@ -14,7 +14,7 @@ module.exports = {
         filename: 'bundle.js'
     },resolve: {
         // require files in app without specifying extensions
-        extensions: ['.js', '.json', '.jsx', '.less'],
+        extensions: ['.js', '.json', '.jsx', '.less', '.css'],
         alias: {
             // pretty useful to have a starting point in nested modules
             'appRoot': path.join(__dirname, 'js'),
@@ -40,6 +40,10 @@ module.exports = {
                     presets: ['es2015', 'stage-0', 'react'],
                 }
             },
+            {
+                test: /\.css$/,
+                loader: 'style-loader!css-loader'
+            }
         ]
     }
 };
